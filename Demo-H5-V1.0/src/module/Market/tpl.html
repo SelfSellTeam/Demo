@@ -1,0 +1,40 @@
+<div class="module-market">
+    <section class="coin" >
+        <div class="coin-item" >
+            <span class="item-pairs" @click="tottleList"><i>ANDR/SSS</i><i class="item-pairs-icon" :class="{'on': isActive}"></i></span>
+            <img class="item-icon" src="./img/maimai.png" alt="" v-if="page === 'KLINE'" @click="page = 'BUYSELL'">
+            <img class="item-icon" src="./img/qx.png" alt="" v-if="page === 'BUYSELL'" @click="page = 'KLINE'">
+            <drop-list v-if="isActive" v-on:hide="isActive = false"></drop-list>
+        </div>
+
+        <div class="kline" v-if="page === 'KLINE'">
+            <div class="coin-detail" >
+                <ul>
+                    <li><span class="detail-title">Last</span><span class="detail-account" style="color: #75aa3d">1.01 SSS</span></li>
+                    <li><span class="detail-title">24h High</span><span class="detail-account">1.342</span></li>
+                    <li><span class="detail-title">Bid</span><span class="detail-account">1.035</span></li>
+                    <li><span class="detail-title">Volume</span><span class="detail-account">1223745745 SSS</span></li>
+                </ul>
+                <ul>
+                    <li><span class="detail-title">24h Change</span><span class="detail-account" style="color: #f13e79">0.00%</span></li>
+                    <li><span class="detail-title">24Low</span><span class="detail-account">0.984</span></li>
+                    <li><span class="detail-title">Ask</span><span class="detail-account">1.008</span></li>
+                </ul>
+            </div>
+            <kline></kline>
+            <div class="btn-group">
+                <span class="ui-btn buy" @click="turnToBuySell('Buy')">Buy</span>
+                <span class="ui-btn sell" @click="turnToBuySell('Sell')">Sell</span>
+            </div>
+        </div>
+
+
+        <div class="buySell" v-if="page === 'BUYSELL'">
+            <buy-sell :buySellType="buySellType"></buy-sell>
+        </div>
+    </section>
+
+
+
+    <Mainnav current="market"></Mainnav>
+</div>

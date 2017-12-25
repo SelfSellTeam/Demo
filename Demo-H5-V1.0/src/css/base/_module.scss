@@ -1,0 +1,27 @@
+html,body{
+  width: 100%;
+  min-height: 100%;
+}
+
+.m-table{
+  width: 100%;
+  font-size: .26rem;
+  background-color: #fff;
+  thead{
+    color: #777;
+  }
+  tbody{
+    color: #171717;
+  }
+  tr{
+    padding-left: .3rem;
+    height: 1rem;
+    line-height: 1rem;
+    td{
+      border-bottom: #eee;
+      &:first-child{
+        padding-left: .3rem;
+      }
+    }
+  }
+}

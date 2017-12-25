@@ -1,0 +1,35 @@
+<div class="module-coin-ico">
+    <!--<section class="coin-info">-->
+
+        <!--<div class="coin-info-item">-->
+            <!--<label class="item-label">Start Date</label>-->
+            <!--<span class="item-text">2017-09-13 20:00:00 （CST）</span>-->
+        <!--</div>-->
+        <!--<div class="coin-info-item">-->
+            <!--<label class="item-label">End Date</label>-->
+            <!--<span class="item-text">2017-09-25 20:00:00 （CST）</span>-->
+        <!--</div>-->
+        <!--<div class="coin-info-item">-->
+            <!--<label class="item-label">Target</label>-->
+            <!--<span class="item-text">50,000 SSS</span>-->
+        <!--</div>-->
+        <!--<div class="coin-info-item">-->
+            <!--<label class="item-label">In return</label>-->
+            <!--<span class="item-text">5% of my total revenue (in SSS) monthly</span>-->
+        <!--</div>-->
+    <!--</section>-->
+
+    <christina v-if="$route.params.person === 'christina'"></christina>
+    <ella v-if="$route.params.person === 'ella'"></ella>
+    <section class="coin-invest">
+        <div class="input-wrap">
+            <input type="text" class="input">
+            <span class="unit">sss</span>
+        </div>
+        <span class="btn">Invest Now</span>
+    </section>
+    <section class="coin-slogon">
+        <img src="./img/coin-word.png" alt="" class="img">
+    </section>
+</div>
+

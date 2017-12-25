@@ -1,0 +1,80 @@
+@import "../../../css/base/var";
+
+.module-detail {
+  padding-bottom: .96rem;
+  background-color: $color-bg;
+  section {
+    padding: 0 .3rem;
+    background-color: #fff;
+  }
+  .item-title {
+    margin-bottom: .2rem;
+    line-height: .28rem;
+    font-size: .28rem;
+    font-weight: normal;
+    color: #171717;
+    .item-icon {
+      float: right;
+      width: .2rem;
+      height: .2rem;
+      background: url('./img/duihao.png') center no-repeat;
+      background-size: contain;
+    }
+  }
+  .item-text {
+    line-height: .4rem;
+    font-size: .24rem;
+    color: #777;
+  }
+
+  >.detail-vedio{
+        padding: 0;
+        >.mask{
+          background-color: #000;
+          background-color:rgba(0,0,0,.5);
+          height:.5rem;
+          width:100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-content:center;
+          img{
+              width:.3rem;
+          }
+          span{
+              color: #fff;
+              font-size: .3rem;
+              margin-left:.1rem;
+          }
+        }
+  }
+  > .detail-intro, > .detail-plan, > .detail-return {
+    margin-bottom: .2rem;
+    > .intro-item, > .plan-item, > .return-item {
+      padding: .5rem 0 .36rem;
+      &:not(:last-child) {
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  }
+  >.vote{
+    margin-top:.2rem;
+    margin-bottom: .4rem;
+    width: 90%;
+    margin-left:5%;
+    height: 1rem;
+    line-height: 1rem;
+    background: #171717;
+    color: #fff;
+  }
+  >.cancel{
+    width: 90%;
+    margin-left:5%;
+    height: 1rem;
+    line-height: 1rem;
+    background: #fff;
+    color: #171717;
+  }
+  
+  
+}

@@ -1,0 +1,27 @@
+@import "../../css/base/var.scss";
+
+.module-index{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("./img/intro.png") center no-repeat;
+    background-size: 100%;
+    >.index-text{
+        position: absolute;
+        top: 24%;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: .36rem;
+        color: #fff;
+    }
+    >.index-btn{
+        position: absolute;
+        top: 76%;
+        left: 50%;
+        width: 6.9rem;
+        height: 1rem;
+        line-height: 1rem;
+        transform: translateX(-3.45rem);
+    }
+}

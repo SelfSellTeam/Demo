@@ -1,0 +1,66 @@
+@import "../../../css/base/var";
+
+.module-coin-ico{
+    background-color: $color-bg;
+    padding-top: 0.2rem;
+    padding-bottom: .96rem;
+    width: 100%;
+    height: 100%;
+    .coin-info{
+        padding: 0.6rem 0 0.8rem 0;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        background-color: #fff;
+
+        &-item{
+            font-size: 0.24rem;
+            height: .6rem;
+            line-height: 0.6rem;
+            .item-label{
+                display: inline-block;
+                padding-left: 0.3rem;
+                width: 1.72rem;
+                color:#171717;
+            }
+            .item-text{
+                color:#777777;
+            }
+        }
+    }
+    .coin-invest{
+        padding: 0.8rem 0.3rem 0;
+        display: flex;
+        >.input-wrap{
+            flex: 1;
+            display: inline-block;
+            position: relative;
+            font-size: 0.28rem;
+            margin-right: .16rem;
+            >.input{
+                height: 0.86rem;
+                width: 100%;
+            }
+            >.unit{
+                position: absolute;
+                top:0;
+                right: 0.16rem;
+                line-height: 0.86rem;
+            }
+        }
+        >.btn{
+            padding: 0.24rem 0.4rem;
+            background-color: #171717;
+            font-size: 0.28rem;
+            color: #fff;
+        }
+    }
+    .coin-slogon{
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        >.img{
+            width: 5.25rem;
+        }
+    }
+}
